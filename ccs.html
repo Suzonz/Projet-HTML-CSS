@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CSS</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="title">Développement web</a>
+    </header>
+    <main>
+        <nav class="nav-menu">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li>
+                    <a href="./html.html" class="langage">HTML</a>
+                </li>
+                <li>
+                    <a href="./ccs.html" class="langage">CSS</a>
+                </li>
+                <li>
+                    <a href="./javascript.html" class="langage">JavaScript</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="menu-contact"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </nav>
+        <section id="def">
+            <h1>CSS</h1>
+            <p class="def"><strong>CSS est l’acronyme de « Cascading Style Sheets » ce qui signifie « feuille de style
+                    en cascade ».</strong></p>
+            <p class="def2">Le CSS représente un langage informatique dédié à la mise en forme visuelle des documents
+                web.
+                Parmi ses nombreuses fonctionnalités, le CSS permet, entre autres, de gérer l’aspect typographique, la
+                disposition des blocs, les couleurs, les animations et bien d’autres propriétés visuelles
+                incontournables.</p>
+        </section>
+        <section id="section-article">
+            <h2 class="intro">Introduction</h2>
+            <article>
+                <h3>Apprendre le CSS</h3>
+                <div class="video">
+                    <video src="./videos/CSS-cest-quoi.mp4" controls></video>
+                </div>
+                <a href="https://www.youtube.com/@InformatiqueSansComplexe" target="_blank" class="video-name">Youtube -
+                    L'informatique sans complexe</a>
+            </article>
+            <article>
+                <h3>La syntaxe</h3>
+                <p>La syntaxe du CSS repose sur différents éléments clés permettant de cibler les éléments HTML et de
+                    définir leurs styles :</p>
+                <div class="exemple-img">
+                    <img src="./images/syntaxe-css.png" alt="syntaxe-css">
+                    <p class="source">Exemple de syntaxe CSS par lucidar.me</p>
+                </div>
+                <p><strong>Les sélecteurs</strong> identifient les éléments HTML ciblés par les règles CSS :</p>
+                <ul class="exemple-css">
+                    <li><span class="blue-span">h1 {...}</span> Cible tous les éléments h1</li>
+                    <li><span class="blue-span">#section {...}</span> Cible l'élément avec l'id « section »</li>
+                    <li><span class="blue-span">.title {...}</span> Cible les éléments avec la classe
+                        « title »</li>
+                </ul>
+                <p><strong>Les propriétés</strong> définissent les caractéristiques visuelles à styler (couleur, taille,
+                    marges…) :</p>
+                <ul class="exemple-css">
+                    <li><span class="blue-span">color:</span> Définit la couleur du texte</li>
+
+                    <li><span class="blue-span">font-size:</span> Définit la taille de la police</li>
+
+                    <li><span class="blue-span">margin:</span> Définit une marge extérieure</li>
+                </ul>
+                <p><strong>Les valeurs</strong> spécifient l’aspect concret à donner à chaque propriété :</p>
+                <ul class="exemple-css">
+                    <li><span class="blue-span">color: blue;</span> Colore le texte en bleu</li>
+                    <li><span class="blue-span">font-size: 18px;</span> Définit la taille de le police à 18px</li>
+                </ul>
+                <p><strong>Les déclarations</strong> sont l'ensemble comprenant une propriété et une valeur :</p>
+                <ul class="exemple-css">
+                    <li><span class="blue-span">height: 20px;</span> Est une déclaration composée de la propriété
+                        "height" et de la valeur " 20px"</li>
+                </ul>
+
+            </article>
+            <article>
+                <h3>Les fonctionnalités principales</h3>
+                <p>Avec l’évolution constante des standards web, le CSS (et notamment dans sa dernière version majeure,
+                    le CSS3) a apporté de nombreuses fonctionnalités avancées
+                    pour enrichir l’expérience visuelle des sites internet :</p>
+                <p>Le CSS3 permet de créer des <strong>effets graphiques</strong> sophistiqués directement dans le
+                    navigateur, sans avoir recours à des images </p>
+                <div class="exemple-css-container">
+                    <ul class="exemple-css">
+                        <li class="exemple-css-gradient">
+                            background: linear-gradient (to right, salmon, lemonchiffon);
+                        </li>
+                    </ul>
+                    <p class="exemple-def">Définit le fond en un dégradé de couleur, entre celles sélectionnée, ici
+                        "salmon" et "lemonchiffon"</p>
+                </div>
+                <p><strong>Les transitions</strong> CSS offrent un moyen simple d’animer les changements d’état d’un
+                    élément, tandis que
+                    <strong>les animations</strong> permettent de créer des séquences plus complexes :
+                </p>
+                <div class="exemple-css-container">
+                    <ul class="exemple-css">
+                        <li class="exemple-css-red">
+                            <pre><span class="blue-span">a {color: black;} <br>a:hover {color: red;}</span></pre>
+                        </li>
+                    </ul>
+                    <p class="exemple-def">Définit le changement de couleur du texte, passant du noir au rouge
+                        lorsque
+                        la souris passe dessus</p>
+                </div>
+                <div class="exemple-css-container">
+                    <ul class="exemple-css">
+                        <li>
+                            <pre class="rotate"><span class="blue-span">Rotate</span></pre>
+                        </li>
+                    </ul>
+                    <p class="exemple-def">Ajoute une animation de rotation au texte</p>
+                </div>
+            </article>
+            <article>
+                <h3>A quoi ressemble un fichier CSS</h3>
+                <p class="exemple-nom-img">Voici un exemple de fichier CSS :</p>
+                <div class="exemple-html">
+                    <img src="./images/exemple-css.jpg" alt="exemple-css">
+                </div>
+                <p>Ce fichier peut être lu de cette manière :</p>
+                <ul class="exemple-liste">
+                    <li>
+                        <strong>Ligne 1 à 3 : <span class="blue-span">body { }</span></strong> indique que le style
+                        s'applique au body
+                    </li>
+                    <li>
+                        <strong>Ligne 2 : <span class="blue-span">background-color: darkseagreen;</span></strong>
+                        définit la couleur du fond en "darkseagreen"
+                    </li>
+                    <li>
+                        <strong>Ligne 5 à 7 : <span class="blue-span">h1 { }</span></strong> indique que le style
+                        s'applique au titre h1
+                    </li>
+                    <li>
+                        <strong>Ligne 6 : <span class="blue-span">font-family: Arial, Helvetica,
+                                sans-serif;</span></strong> definit la police en Arial
+                    </li>
+                    <li>
+                        <strong>Ligne 7 : <span class="blue-span">font-size: 40px;</span></strong> définit la taille de
+                        la police à 40px
+                    </li>
+                    <li>
+                        <strong>Ligne 10 à 13 : <span class="blue-span">p { }</span></strong> indique que le style
+                        s'applique au paragraphe
+                    </li>
+                    <li>
+                        <strong>Ligne 11 : <span class="blue-span">color: gold;</span></strong> définit la couleur
+                        "gold" pour le texte
+                    </li>
+                    <li>
+                        <strong>Ligne 7 : <span class="blue-span">font-size: 40px;</span></strong> définit la taille de
+                        la police en plus large qu'originalement
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>A quoi ressemble une page HTML avec CSS</h3>
+                <p class="exemple-nom-img">Voici à quoi ressemble la page créée dans l'exemple précédent : </p>
+                <div>
+                    <img src="./images/capture-css.jpg" alt="exemple-page-css" class="exemple-capture">
+                </div>
+                <p>En comparant avec la version <a href="./html.html#pageHtml">HTML sans CSS</a>, on observe les
+                    changements sur ces éléments :</p>
+                <ul>
+                    <li>la couleur de fond définie (<span class="blue-span">background-color</span>)</li>
+                    <li>le titre de la page avec la police et la taille définies (<span class="blue-span">font-family,
+                            font-size</span>)</li>
+                    <li>le paragraphe avec la police et la taille définies (<span class="blue-span">font-family,
+                            font-size</span>)</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-image">
+            <p>Suivez-nous:</p>
+            <nav>
+                <div>
+                    <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><img src="./images/facecat.jpg"
+                            alt="facecat"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./images/catter.jpg"
+                            alt="catter"></a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/?app=desktop&hl=FR" target="_blank"><img src="./images/youcat.jpg"
+                            alt="youcat"></a>
+                </div>
+                <div>
+                    <a href="https://fr.pinterest.com/" target="_blank"><img src="./images/caterest.jpg"
+                            alt="caterest"></a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

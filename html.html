@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HTML</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="title">Développement web</a>
+    </header>
+    <main>
+        <nav class="nav-menu">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li>
+                    <a href="./html.html" class="langage">HTML</a>
+                </li>
+                <li>
+                    <a href="./ccs.html" class="langage">CSS</a>
+                </li>
+                <li>
+                    <a href="./javascript.html" class="langage">JavaScript</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="menu-contact"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </nav>
+        <section id="def">
+            <h1>HTML</h1>
+            <p class="def"><strong>HTML signifie « HyperText Markup Language » on peut le traduire par «
+                    langage de balises pour
+                    l'hypertexte »</strong>. </p>
+            <p class="def2">C'est un type de langage informatique qui décrit au navigateur comment afficher
+                la page. Pour faire cela, il va définir les éléments de contenu tels que les titres, les paragraphes,
+                les images, les
+                liens ou encore les vidéos.</p>
+        </section>
+        <section id="section-article">
+            <h2 class="intro">Introduction</h2>
+            <article>
+                <h3>Apprendre le HTML</h3>
+                <div class="video">
+                    <video src="./videos/HTML-cest-quoi.mp4" controls></video>
+                </div>
+                <a href="https://www.youtube.com/@InformatiqueSansComplexe" target="_blank" class="video-name">Youtube -
+                    L'informatique sans complexe</a>
+            </article>
+            <article class="html-bal">
+                <h3>Les Balises</h3>
+                <p>Les balises HTML sont les éléments de base du codage HTML. Elles sont utilisées pour mettre en forme
+                    un
+                    texte, structurer et hiérarchiser le contenu d'une page. Les balises indiquent également au
+                    navigateur
+                    comment afficher la page en question. Pour l'internaute, elles sont invisibles sauf s'il affiche le
+                    code
+                    source.</p>
+                <p>Voici les balises principalement utilisées :</p>
+                <div>
+                    <img src="./images/balises.png" alt="balises">
+                    <p class="source">Liste des balises et des éléments les plus utilisés par Wix Blog</p>
+                </div>
+
+            </article>
+            <article class="html-anat">
+                <h3>Anatomie d'un élément HTML</h3>
+                <p>Chaque élément HTML suit une structure simple mais solide :</p>
+                <div class="exemple-img">
+                    <img src="./images/anatomie-element.svg" alt="anatomie élément">
+                    <p class="source">Anatomie d'un élément HTML par Mozilla Developer Network</p>
+                </div>
+                <ul class="html-anat-ul">
+                    <li>
+                        Balise d'ouverture ou ouvrante : Signale le début de l'élément et inclut souvent des attributs
+                        qui
+                        fournissent des informations supplémentaires sur l'élément. Par exemple, la balise :
+                        <span>&lt;p&gt;</span> indique
+                        le début d'un paragraphe
+                    </li>
+                    <li>
+                        Contenu : Il s'agit de l'information que l'élément représente, comme du texte, des images ou
+                        d'autres éléments HTML. Dans notre exemple de paragraphe, le contenu serait le texte proprement
+                        dit du paragraphe
+                    </li>
+                    <li>
+                        Balise de fermeture ou fermante : Elle marque la fin de l'élément. Les balises de fermeture sont
+                        identiques
+                        aux balises d'ouverture, mais elles sont précédées d'une barre oblique (/). Pour notre
+                        paragraphe, la balise de fermeture serait <span>&lt;/p&gt;</span>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>A quoi ressemble un fichier HTML</h3>
+                <p class="exemple-nom-img">Voici un exemple de fichier HTML :</p>
+                <div class="exemple-html">
+                    <img src="./images/exemple-html.jpg" alt="exemple-html">
+                </div>
+                <p>Ce fichier peut être lu de cette manière :</p>
+                <ul class="exemple-liste">
+                    <li>
+                        <strong>Ligne 1 : <span class="blue-span">&lt;DOCTYPE&gt;</span></strong> indique le type du
+                        document, soit HTML
+                    </li>
+                    <li>
+                        <strong>Ligne 2 : <span class="blue-span">&lt;lang&gt;</span></strong> indique la langue. Ici
+                        nous avons lang="fr" la page sera
+                        donc en français
+                    </li>
+                    <li>
+                        <strong>Ligne 4 à 8 : <span class="blue-span">&lt;head&gt;</span></strong> permet de rentrer des
+                        données qui seront invisibles
+                        à l'utilisateur
+                    </li>
+                    <li>
+                        <strong>Ligne 7 : <span class="blue-span">&lt;title&gt;</span></strong> indique le titre qui
+                        sera apparaitra sur l'onglet du navigateur
+                    </li>
+                    <li>
+                        <strong>Ligne 10 à 13 : <span class="blue-span">&lt;body&gt;</span></strong> contient tout ce
+                        qui va apparaitre sur la page web
+                        (titre, paragraphe,img, etc)
+                    </li>
+                    <li>
+                        <strong>Ligne 11 : <span class="blue-span">&lt;h1&gt;</span></strong> indique le titre
+                        principale de la page.
+                    </li>
+                    <li>
+                        <strong>Ligne 12 : <span class="blue-span">&lt;p&gt;</span></strong> contient un paragraphe
+                    </li>
+                </ul>
+            </article>
+            <article id="pageHtml">
+                <h3>A quoi ressemble une page HTML</h3>
+                <p class="exemple-nom-img">Voici à quoi ressemble la page créée dans l'exemple précédent : </p>
+                <div>
+                    <img src="./images/capture-html.jpg" alt="exemple-page-html" class="exemple-capture">
+                </div>
+                <p>On y retrouve :</p>
+                <ul>
+                    <li>le titre du site sur l'onglet (<span class="blue-span">title</span>)</li>
+                    <li>le titre de la page (<span class="blue-span">h1</span>)</li>
+                    <li>le paragraphe (<span class="blue-span">p</span>)</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-image">
+            <p>Suivez-nous:</p>
+            <nav>
+                <div>
+                    <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><img src="./images/facecat.jpg"
+                            alt="facecat"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./images/catter.jpg"
+                            alt="catter"></a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/?app=desktop&hl=FR" target="_blank"><img src="./images/youcat.jpg"
+                            alt="youcat"></a>
+                </div>
+                <div>
+                    <a href="https://fr.pinterest.com/" target="_blank"><img src="./images/caterest.jpg"
+                            alt="caterest"></a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
