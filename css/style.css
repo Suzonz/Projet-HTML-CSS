@@ -258,8 +258,11 @@ article h3 {
     justify-content: center;
     width: 100%;
 
-    video {
+    video,
+    iframe {
         width: 70%;
+        aspect-ratio: 16 / 9;
+        border: 0;
     }
 }
 
@@ -569,7 +572,8 @@ footer nav img {
         margin-top: 40px;
     }
 
-    .video video {
+    .video video,
+    .video iframe {
         width: 100%;
     }
 
