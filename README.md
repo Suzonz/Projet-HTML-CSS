@@ -21,7 +21,7 @@ The site is in French.
 | HTML | What HTML is, tags, the anatomy of an element, a video |
 | CSS | What CSS is, its syntax, a video |
 | JavaScript | What JavaScript is and what it is used for, a video |
-| Contact | A contact form with a confirmation pop-up (it does not send anything) |
+| Contact | A demo contact form: the pop-up says that no message is sent |
 
 ## What it shows
 
